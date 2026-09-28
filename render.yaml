@@ -11,15 +11,15 @@ services:
       - key: OPAY_CREATE_URL
         value: https://testapi.opaycheckout.com/api/v1/international/cashier/create
       - key: OPAY_PUBLIC_KEY
-        sync: false
+        value: OPAYPUB17895715483500.27507669120240186
       - key: OPAY_MERCHANT_ID
-        sync: false
+        value: 256626091607671
       - key: OPAY_RETURN_URL
-        sync: false
+        value: https://e-commrce-beta.vercel.app/order/success
       - key: OPAY_CALLBACK_URL
-        sync: false
+        value: https://e-commerce-backend.onrender.com/api/payments/opay/callback
       - key: OPAY_CANCEL_URL
-        sync: false
+        value: https://e-commrce-beta.vercel.app/checkout
       - key: OPAY_EXPIRE_MINUTES
         value: 30
       - key: OPAY_TIMEOUT_MS
@@ -29,4 +29,4 @@ services:
       - key: OPAY_MINIMUM_AMOUNT_NGN
         value: 30000
       - key: FRONTEND_ORIGIN
-        sync: false
+        value: https://e-commrce-beta.vercel.app
