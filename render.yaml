@@ -1,0 +1,32 @@
+services:
+  # Backend API Service
+  - type: web
+    name: e-commerce-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: OPAY_CREATE_URL
+        value: https://testapi.opaycheckout.com/api/v1/international/cashier/create
+      - key: OPAY_PUBLIC_KEY
+        sync: false
+      - key: OPAY_MERCHANT_ID
+        sync: false
+      - key: OPAY_RETURN_URL
+        sync: false
+      - key: OPAY_CALLBACK_URL
+        sync: false
+      - key: OPAY_CANCEL_URL
+        sync: false
+      - key: OPAY_EXPIRE_MINUTES
+        value: 30
+      - key: OPAY_TIMEOUT_MS
+        value: 15000
+      - key: OPAY_NGN_RATE
+        value: 1500
+      - key: OPAY_MINIMUM_AMOUNT_NGN
+        value: 30000
+      - key: FRONTEND_ORIGIN
+        sync: false
