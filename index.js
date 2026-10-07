@@ -2,6 +2,8 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 
+// Payment backend for e-commerce with OPay integration
+
 const app = express();
 const port = Number(process.env.PORT || 3000);
 const opayUrl = process.env.OPAY_CREATE_URL || "https://testapi.opaycheckout.com/api/v1/international/cashier/create";
