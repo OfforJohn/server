@@ -15,11 +15,11 @@ services:
       - key: OPAY_MERCHANT_ID
         value: 256626091607671
       - key: OPAY_RETURN_URL
-        value: https://e-commrce-beta.vercel.app/order/success
+        value: https://e-coomerce-rho.vercel.app/order/success
       - key: OPAY_CALLBACK_URL
-        value: https://e-commerce-backend.onrender.com/api/payments/opay/callback
+        value: https://server-ay6p.onrender.com/api/payments/opay/callback
       - key: OPAY_CANCEL_URL
-        value: https://e-commrce-beta.vercel.app/checkout
+        value: https://e-coomerce-rho.vercel.app/checkout
       - key: OPAY_EXPIRE_MINUTES
         value: 30
       - key: OPAY_TIMEOUT_MS
@@ -29,4 +29,4 @@ services:
       - key: OPAY_MINIMUM_AMOUNT_NGN
         value: 30000
       - key: FRONTEND_ORIGIN
-        value: https://e-commrce-beta.vercel.app
+        value: https://e-coomerce-rho.vercel.app
